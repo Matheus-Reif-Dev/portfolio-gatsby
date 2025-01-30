@@ -1,0 +1,128 @@
+.popup-project-card {
+  cursor: pointer;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+/* Overlay do Modal */
+.popup-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Estilo Light Theme (Padrão) */
+.popup-modal-content {
+  background: var(--theme-ui-colors-background);
+  color: var(--theme-ui-colors-text);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  transform: scale(0);
+  opacity: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-modal-overlay .popup-modal-content > h2{
+  color: var(--theme-ui-colors-text) !important;
+}
+
+
+/* Animação de Entrada */
+.popup-modal-content.open {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Animação de Saída */
+.popup-modal-content.close {
+  transform: scale(0);
+  opacity: 0;
+}
+
+/* Botão de Fechar */
+.popup-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--theme-ui-colors-text);
+  font-size: 1.2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.popup-modal-close:hover {
+  transform: scale(1.2);
+}
+
+/* Estilização das habilidades dentro do pop-up */
+.popup-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.popup-skill-tag {
+  background: color-mix(in srgb, var(--theme-ui-colors-background) 80%, var(--theme-ui-colors-text));
+  color: var(--theme-ui-colors-text);
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.popup-link {
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.popup-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--theme-ui-colors-primary);
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.popup-link:hover::after {
+  width: 100%;
+  left: 0;
+}

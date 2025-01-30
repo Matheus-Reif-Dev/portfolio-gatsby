@@ -1,32 +1,67 @@
-## Projects
+import PopupProjectCard from "/src/components/PopupProjectCard.js";
 
-<ProjectCard
-  title="Tips & Tricks for Gatsby"
-  link="https://www.lekoarts.de/gatsby/tips-and-tricks-for-gatsby?utm_source=cara&utm_medium=Theme"
+## Projetos
+
+<PopupProjectCard
+  title="Aplicativo da Rede Russi de Postos"
   bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+  skills={["React Native", "Laravel", "Node.js", "PostgreSQL", "MongoDB"]}
 >
-  A collection of short, but useful quick tips shared by me and the community
-  about Gatsby. From GraphQL over local development to deployment.
-</ProjectCard>
-<ProjectCard
-  title="Setting  up a yarn Workspace"
-  link="https://www.lekoarts.de/javascript/setting-up-a-yarn-workspace-with-typescript-eslint-and-cypress?utm_source=cara&utm_medium=Theme"
+  <h2>Aplicativo da Rede Russi de Postos de Combustível</h2>
+  <p>
+    Solução integrada para a Rede Russi, composta por três aplicações que otimizam
+    a gestão interna e a experiência do cliente:
+  </p>
+  <ul>
+    <li>
+      <strong>Painel Administrativo (Laravel):</strong> Gerenciamento centralizado de operações,
+      relatórios e configurações dos postos de combustível.
+    </li>
+    <li>
+      <strong>Aplicativo Mobile (React/Expo):</strong> Disponível para Android e iOS, permite
+      visualização de promoções, localização de postos e envio de notificações via Firebase.
+    </li>
+    <li>
+      <strong>Back-end (Node.js/Express):</strong> Responsável pelo processamento de dados,
+      integrando MongoDB e PostgreSQL para garantir escalabilidade e consistência.
+    </li>
+  </ul>
+  <h3>
+    <strong>Links:</strong><br/>
+    <a className="popup-link" href="https://apps.apple.com/br/app/rede-russi/id1410137373" target="_blank">Versão iOS</a> |
+    <a className="popup-link" href="https://play.google.com/store/apps/details?id=com.giorgiofellipe.rederussi&amp;hl=pt_BR" target="_blank">Versão Android</a>
+  </h3>
+</PopupProjectCard>
+
+<PopupProjectCard
+  title="Área Central - Website"
   bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+  skills={["Scss", "WordPress", "PHP", "HTML", "JavaScript"]}
 >
-  A robust solution for multi-package repositories.
-</ProjectCard>
-<ProjectCard
-  title="Adding a Draft Feature to Gatsby"
-  link="https://www.lekoarts.de/garden/adding-a-draft-feature-to-gatsby?utm_source=cara&utm_medium=Theme"
+  <h2>Área Central - Website Institucional</h2>
+  <p>
+    Desenvolvimento de um site institucional em WordPress para a Área Central,
+    com foco em design sofisticado, branding e otimização para SEO.
+  </p>
+  <h3>
+    <strong>Link:</strong><br/>
+    <a className="popup-link" href="https://www.areacentral.com.br/" target="_blank">Visitar Site</a>
+  </h3>
+</PopupProjectCard>
+
+<PopupProjectCard
+  title="Berkenbrock e Carvalho - Advocacia Contratual"
   bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+  skills={["Laravel", "Integração", "Scss", "PHP", "MySQL"]}
 >
-  A solution with the createSchemaCustomization API.
-</ProjectCard>
-<ProjectCard
-  title="Theme UI Plugin for Figma"
-  link="https://www.lekoarts.de/design/introducing-the-theme-ui-plugin-for-figma?utm_source=cara&utm_medium=Theme"
-  bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
->
-  The Theme UI plugin for Figma allows for a workflow where Theme UI is the
-  starting point both for design & development.
-</ProjectCard>
+  <h2>Berkenbrock e Carvalho - Advocacia Contratual</h2>
+  <p>
+    Plataforma jurídica desenvolvida em Laravel para automação de contratos.
+    Integra <strong>pagar.me</strong> para pagamentos e <strong>Clicksign</strong> para assinatura digital,
+    otimizando a formalização de documentos.
+  </p>
+  <h3>
+    <strong>Link:</strong><br/>
+    <a className="popup-link" href="https://sistemamutuo.com.br/sign-in" target="_blank">Visitar Site</a>
+  </h3>
+</PopupProjectCard>
