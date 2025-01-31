@@ -1,40 +1,33 @@
-import type { GatsbyConfig, PluginRef } from "gatsby"
-import "dotenv/config"
+import type { GatsbyConfig, PluginRef } from "gatsby";
+import "dotenv/config";
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // You can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.mjs
-    siteTitle: `Cara`,
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://cara.lekoarts.de`,
-    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    siteTitle: `Meu Portfólio`,
+    siteTitleAlt: `Portfólio - Desenvolvedor Full Stack`,
+    siteHeadline: `Portfólio - Projetos e Experiência`,
+    siteUrl: `https://seu-site.com`,
+    siteDescription: `Portfólio moderno criado com Gatsby, apresentando projetos e habilidades com animações e efeitos visuais dinâmicos.`,
     siteImage: `/banner.jpg`,
-    siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    siteLanguage: `pt-br`,
+    author: `@meuusuario`,
   },
   trailingSlash: `always`,
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
-      // See the theme's README for all available options
       options: {},
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Meu Portfólio - Desenvolvedor Full Stack`,
+        short_name: `Portfólio`,
+        description: `Portfólio moderno criado com Gatsby, apresentando projetos e habilidades com animações e efeitos visuais dinâmicos.`,
         start_url: `/`,
-        background_color: `#141821`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#f6ad55`,
+        background_color: `#121212`,
         display: `standalone`,
         icons: [
           {
@@ -50,7 +43,6 @@ const config: GatsbyConfig = {
         ],
       },
     },
-    // You can remove this plugin if you don't need it
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-statoscope`,
       options: {
@@ -60,6 +52,6 @@ const config: GatsbyConfig = {
       },
     },
   ].filter(Boolean) as Array<PluginRef>,
-}
+};
 
-export default config
+export default config;
