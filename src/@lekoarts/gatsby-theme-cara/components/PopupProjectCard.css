@@ -126,3 +126,21 @@
   width: 100%;
   left: 0;
 }
+
+.popup-tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  max-width: 250px;
+  z-index: 1000;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.size-over{
+  font-size: 1.25rem !important;
+}

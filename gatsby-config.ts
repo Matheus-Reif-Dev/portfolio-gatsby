@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
     siteDescription: `Portfólio moderno criado com Gatsby, apresentando projetos e habilidades com animações e efeitos visuais dinâmicos.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `pt-br`,
-    author: `@meuusuario`,
+    author: `@matheusReif`,
   },
   trailingSlash: `always`,
   plugins: [
