@@ -1,0 +1,32 @@
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.language-switcher button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.language-switcher button img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.language-switcher button.active img {
+  border-color: #fff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.language-switcher button:hover {
+  transform: scale(1.1);
+}

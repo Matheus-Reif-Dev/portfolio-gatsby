@@ -144,3 +144,16 @@
 .size-over{
   font-size: 1.25rem !important;
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Para telas menores (mobile), os cards ficam em uma única coluna */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

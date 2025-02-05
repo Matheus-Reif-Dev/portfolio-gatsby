@@ -1,71 +1,161 @@
+import TranslatedSection from "../components/TranslatedSection";
 import PopupProjectCard from "../components/PopupProjectCard.js";
 
-## Projetos
+## <TranslatedSection pt="Projetos" en="Projects" />
 
-<PopupProjectCard
-  title="Aplicativo da Rede Russi de Postos"
-  bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-  skills={["React Native", "Laravel", "Node.js", "PostgreSQL", "MongoDB"]}
->
-  ## Aplicativo da Rede Russi de Postos de Combustível
-  Solução integrada para a Rede Russi, composta por três aplicações que otimizam
-  a gestão interna e a experiência do cliente:
-  <ul>
-    <li>
-      <strong>Painel Administrativo (Laravel):</strong> Gerenciamento centralizado de operações,
-      relatórios e configurações dos postos de combustível.
-    </li>
-    <li>
-      <strong>Aplicativo Mobile (React/Expo):</strong> Disponível para Android e iOS, permite
-      visualização de promoções, localização de postos e envio de notificações via Firebase.
-    </li>
-    <li>
-      <strong>Back-end (Node.js/Express):</strong> Responsável pelo processamento de dados,
-      integrando MongoDB e PostgreSQL para garantir escalabilidade e consistência.
-    </li>
-  </ul>
-  
-  <strong>Links:</strong><br/>
-  <a className="popup-link" href="https://apps.apple.com/br/app/rede-russi/id1410137373" target="_blank">Versão iOS</a> |
-  <a className="popup-link" href="https://play.google.com/store/apps/details?id=com.giorgiofellipe.rederussi&amp;hl=pt_BR" target="_blank">Versão Android</a>
-</PopupProjectCard>
+<TranslatedSection 
+  pt={
+    <>
+    <div className="projects-grid">
+      <PopupProjectCard
+        title="Aplicativo da Rede Russi de Postos"
+        bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+        skills={["React Native", "Laravel", "Node.js", "PostgreSQL", "MongoDB"]}
+      >
+        <h2>Aplicativo da Rede Russi de Postos de Combustível</h2>
+        <p>
+          Solução integrada para a Rede Russi, composta por três aplicações que otimizam
+          a gestão interna e a experiência do cliente:
+        </p>
+        <ul>
+          <li>
+            <strong>Painel Administrativo (Laravel):</strong> Gerenciamento centralizado de operações,
+            relatórios e configurações dos postos de combustível.
+          </li>
+          <li>
+            <strong>Aplicativo Mobile (React/Expo):</strong> Disponível para Android e iOS, permite
+            visualização de promoções, localização de postos e envio de notificações via Firebase.
+          </li>
+          <li>
+            <strong>Back-end (Node.js/Express):</strong> Responsável pelo processamento de dados,
+            integrando MongoDB e PostgreSQL para garantir escalabilidade e consistência.
+          </li>
+        </ul>
+        <strong>Links:</strong><br/>
+        <a className="popup-link" href="https://apps.apple.com/br/app/rede-russi/id1410137373" target="_blank">Versão iOS</a> |
+        <a className="popup-link" href="https://play.google.com/store/apps/details?id=com.giorgiofellipe.rederussi&amp;hl=pt_BR" target="_blank">Versão Android</a>
+      </PopupProjectCard>
 
-<PopupProjectCard
-  title="Área Central - Website"
-  bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-  skills={["Scss", "WordPress", "PHP", "HTML", "JavaScript"]}
->
-  ## Área Central - Website Institucional
-  Desenvolvimento de um site institucional em WordPress para a Área Central,
-  com foco em design sofisticado, branding e otimização para SEO.
+      <PopupProjectCard
+        title="Área Central - Website"
+        bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+        skills={["Scss", "WordPress", "PHP", "HTML", "JavaScript"]}
+      >
+        <h2>Área Central - Website Institucional</h2>
+        <p>
+          Desenvolvimento de um site institucional em WordPress para a Área Central,
+          com foco em design sofisticado, branding e otimização para SEO.
+        </p>
+        <strong>Link:</strong><br/>
+        <a className="popup-link" href="https://www.areacentral.com.br/" target="_blank">Visitar Site</a>
+      </PopupProjectCard>
 
-  <strong>Link:</strong><br/>
-  <a className="popup-link" href="https://www.areacentral.com.br/" target="_blank">Visitar Site</a>
-</PopupProjectCard>
+      <PopupProjectCard
+        title="Berkenbrock e Carvalho - Advocacia Contratual"
+        bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+        skills={["Laravel", "Integração", "Scss", "PHP", "MySQL"]}
+      >
+        <h2>Berkenbrock e Carvalho - Advocacia Contratual</h2>
+        <p>
+          Plataforma jurídica desenvolvida em Laravel para automação de contratos.
+          Integra <strong>pagar.me</strong> para pagamentos e <strong>Clicksign</strong> para assinatura digital,
+          otimizando a formalização de documentos.
+        </p>
+        <strong>Link:</strong><br/>
+        <a className="popup-link" href="https://sistemamutuo.com.br/sign-in" target="_blank">Visitar Site</a>
+      </PopupProjectCard>
 
-<PopupProjectCard
-  title="Berkenbrock e Carvalho - Advocacia Contratual"
-  bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
-  skills={["Laravel", "Integração", "Scss", "PHP", "MySQL"]}
->
-  ## Berkenbrock e Carvalho - Advocacia Contratual
-  Plataforma jurídica desenvolvida em Laravel para automação de contratos.
-  Integra <strong>pagar.me</strong> para pagamentos e <strong>Clicksign</strong> para assinatura digital,
-  otimizando a formalização de documentos.
+      <PopupProjectCard
+        title="Amazonas Cap"
+        bg="linear-gradient(to right, rgb(213, 133, 255) 0%, rgb(0, 255, 238) 100%)"
+        skills={["Scss", "WordPress", "PHP", "HTML", "JavaScript"]}
+      >
+        <h2>Amazonas Cap</h2>
+        <p>
+          Website institucional em WordPress desenvolvido para a aceleradora de startups Amazonas Cap.
+          O site destaca projetos inovadores, investimentos e oportunidades dentro do ecossistema de startups.
+        </p>
+        <strong>Link:</strong><br/>
+        <a className="popup-link" href="https://amazonascap.com.br/" target="_blank">Visitar Site</a>
+      </PopupProjectCard>
+      </div>
+    </>
+  }
+  en={
+    <>
+    <div className="projects-grid">
+      <PopupProjectCard
+        title="Rede Russi Gas Station App"
+        bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+        skills={["React Native", "Laravel", "Node.js", "PostgreSQL", "MongoDB"]}
+      >
+        <h2>Rede Russi Gas Station App</h2>
+        <p>
+          An integrated solution for Rede Russi, consisting of three applications that optimize
+          internal management and customer experience:
+        </p>
+        <ul>
+          <li>
+            <strong>Admin Panel (Laravel):</strong> Centralized management of operations,
+            reports, and fuel station configurations.
+          </li>
+          <li>
+            <strong>Mobile App (React/Expo):</strong> Available for Android and iOS, allowing
+            users to view promotions, locate fuel stations, and receive Firebase notifications.
+          </li>
+          <li>
+            <strong>Back-end (Node.js/Express):</strong> Responsible for data processing,
+            integrating MongoDB and PostgreSQL for scalability and consistency.
+          </li>
+        </ul>
+        <strong>Links:</strong><br/>
+        <a className="popup-link" href="https://apps.apple.com/br/app/rede-russi/id1410137373" target="_blank">iOS Version</a> |
+        <a className="popup-link" href="https://play.google.com/store/apps/details?id=com.giorgiofellipe.rederussi&amp;hl=pt_BR" target="_blank">Android Version</a>
+      </PopupProjectCard>
 
-  <strong>Link:</strong><br/>
-  <a className="popup-link" href="https://sistemamutuo.com.br/sign-in" target="_blank">Visitar Site</a>
-</PopupProjectCard>
+      <PopupProjectCard
+        title="Área Central - Institutional Website"
+        bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+        skills={["Scss", "WordPress", "PHP", "HTML", "JavaScript"]}
+      >
+        <h2>Área Central - Institutional Website</h2>
+        <p>
+          A WordPress institutional website developed for Área Central, focusing on
+          sophisticated design, branding, and SEO optimization.
+        </p>
+        <strong>Link:</strong><br/>
+        <a className="popup-link" href="https://www.areacentral.com.br/" target="_blank">Visit Website</a>
+      </PopupProjectCard>
 
-<PopupProjectCard
-  title="Amazonas Cap"
-  bg="linear-gradient(to right, rgb(213, 133, 255) 0%, rgb(0, 255, 238) 100%)"
-  skills={["Scss", "WordPress", "PHP", "HTML", "JavaScript"]}
->
-  ## Amazonas Cap
-  Website institucional em WordPress desenvolvido para a aceleradora de startups Amazonas Cap.
-  O site destaca projetos inovadores, investimentos e oportunidades dentro do ecossistema de startups.
+      <PopupProjectCard
+        title="Berkenbrock & Carvalho - Contract Law"
+        bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+        skills={["Laravel", "Integration", "Scss", "PHP", "MySQL"]}
+      >
+        <h2>Berkenbrock & Carvalho - Contract Law</h2>
+        <p>
+          A Laravel-based legal platform for contract automation.
+          Integrates <strong>pagar.me</strong> for payments and <strong>Clicksign</strong> for digital signatures,
+          optimizing document formalization.
+        </p>
+        <strong>Link:</strong><br/>
+        <a className="popup-link" href="https://sistemamutuo.com.br/sign-in" target="_blank">Visit Website</a>
+      </PopupProjectCard>
 
-  <strong>Link:</strong><br/>
-  <a className="popup-link" href="https://amazonascap.com.br/" target="_blank">Visitar Site</a>
-</PopupProjectCard>
+      <PopupProjectCard
+        title="Amazonas Cap"
+        bg="linear-gradient(to right, rgb(213, 133, 255) 0%, rgb(0, 255, 238) 100%)"
+        skills={["Scss", "WordPress", "PHP", "HTML", "JavaScript"]}
+      >
+        <h2>Amazonas Cap</h2>
+        <p>
+          A WordPress institutional website developed for the Amazonas Cap startup accelerator.
+          The site highlights innovative projects, investments, and opportunities within the startup ecosystem.
+        </p>
+        <strong>Link:</strong><br/>
+        <a className="popup-link" href="https://amazonascap.com.br/" target="_blank">Visit Website</a>
+      </PopupProjectCard>
+      </div>
+    </>
+  }
+/>
