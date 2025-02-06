@@ -105,10 +105,15 @@
 }
 
 .popup-link {
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: bold;
   position: relative;
   display: inline-block;
+}
+
+
+.popup-link:not(:first-of-type) {
+  margin-left: 5px;
 }
 
 .popup-link::after {
@@ -145,15 +150,12 @@
   font-size: 1.25rem !important;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.size-over-topo{
+  font-size: 1.8rem !important;
 }
 
-/* Para telas menores (mobile), os cards ficam em uma única coluna */
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+@media screen and (min-width: 400px) {
+  .size-over-topo{
+    font-size: 1.5rem !important;
   }
 }

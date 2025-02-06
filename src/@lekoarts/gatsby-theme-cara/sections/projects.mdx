@@ -1,12 +1,12 @@
 import TranslatedSection from "../components/TranslatedSection";
+import InlineTranslatedSection from "../components/InlineTranslatedSection";
 import PopupProjectCard from "../components/PopupProjectCard.js";
 
 ## <TranslatedSection pt="Projetos" en="Projects" />
 
-<TranslatedSection 
+<InlineTranslatedSection 
   pt={
     <>
-    <div className="projects-grid">
       <PopupProjectCard
         title="Aplicativo da Rede Russi de Postos"
         bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
@@ -18,18 +18,9 @@ import PopupProjectCard from "../components/PopupProjectCard.js";
           a gestão interna e a experiência do cliente:
         </p>
         <ul>
-          <li>
-            <strong>Painel Administrativo (Laravel):</strong> Gerenciamento centralizado de operações,
-            relatórios e configurações dos postos de combustível.
-          </li>
-          <li>
-            <strong>Aplicativo Mobile (React/Expo):</strong> Disponível para Android e iOS, permite
-            visualização de promoções, localização de postos e envio de notificações via Firebase.
-          </li>
-          <li>
-            <strong>Back-end (Node.js/Express):</strong> Responsável pelo processamento de dados,
-            integrando MongoDB e PostgreSQL para garantir escalabilidade e consistência.
-          </li>
+          <li><strong>Painel Administrativo (Laravel):</strong> Gerenciamento centralizado de operações.</li>
+          <li><strong>Aplicativo Mobile (React/Expo):</strong> Disponível para Android e iOS.</li>
+          <li><strong>Back-end (Node.js/Express):</strong> Processamento de dados com MongoDB e PostgreSQL.</li>
         </ul>
         <strong>Links:</strong><br/>
         <a className="popup-link" href="https://apps.apple.com/br/app/rede-russi/id1410137373" target="_blank">Versão iOS</a> |
@@ -58,15 +49,14 @@ import PopupProjectCard from "../components/PopupProjectCard.js";
         <h2>Berkenbrock e Carvalho - Advocacia Contratual</h2>
         <p>
           Plataforma jurídica desenvolvida em Laravel para automação de contratos.
-          Integra <strong>pagar.me</strong> para pagamentos e <strong>Clicksign</strong> para assinatura digital,
-          otimizando a formalização de documentos.
+          Integra <strong>pagar.me</strong> para pagamentos e <strong>Clicksign</strong> para assinatura digital.
         </p>
         <strong>Link:</strong><br/>
         <a className="popup-link" href="https://sistemamutuo.com.br/sign-in" target="_blank">Visitar Site</a>
       </PopupProjectCard>
 
       <PopupProjectCard
-        title="Amazonas Cap"
+        title="Amazonas Cap - Website"
         bg="linear-gradient(to right, rgb(213, 133, 255) 0%, rgb(0, 255, 238) 100%)"
         skills={["Scss", "WordPress", "PHP", "HTML", "JavaScript"]}
       >
@@ -78,12 +68,10 @@ import PopupProjectCard from "../components/PopupProjectCard.js";
         <strong>Link:</strong><br/>
         <a className="popup-link" href="https://amazonascap.com.br/" target="_blank">Visitar Site</a>
       </PopupProjectCard>
-      </div>
     </>
   }
   en={
     <>
-    <div className="projects-grid">
       <PopupProjectCard
         title="Rede Russi Gas Station App"
         bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
@@ -92,24 +80,15 @@ import PopupProjectCard from "../components/PopupProjectCard.js";
         <h2>Rede Russi Gas Station App</h2>
         <p>
           An integrated solution for Rede Russi, consisting of three applications that optimize
-          internal management and customer experience:
+          internal management and customer experience.
         </p>
         <ul>
-          <li>
-            <strong>Admin Panel (Laravel):</strong> Centralized management of operations,
-            reports, and fuel station configurations.
-          </li>
-          <li>
-            <strong>Mobile App (React/Expo):</strong> Available for Android and iOS, allowing
-            users to view promotions, locate fuel stations, and receive Firebase notifications.
-          </li>
-          <li>
-            <strong>Back-end (Node.js/Express):</strong> Responsible for data processing,
-            integrating MongoDB and PostgreSQL for scalability and consistency.
-          </li>
+          <li><strong>Admin Panel (Laravel):</strong> Centralized management of operations.</li>
+          <li><strong>Mobile App (React/Expo):</strong> Available for Android and iOS.</li>
+          <li><strong>Back-end (Node.js/Express):</strong> Data processing with MongoDB and PostgreSQL.</li>
         </ul>
         <strong>Links:</strong><br/>
-        <a className="popup-link" href="https://apps.apple.com/br/app/rede-russi/id1410137373" target="_blank">iOS Version</a> |
+        <a className="popup-link" href="https://apps.apple.com/br/app/rede-russi/id1410137373" target="_blank">iOS Version</a> | 
         <a className="popup-link" href="https://play.google.com/store/apps/details?id=com.giorgiofellipe.rederussi&amp;hl=pt_BR" target="_blank">Android Version</a>
       </PopupProjectCard>
 
@@ -135,15 +114,14 @@ import PopupProjectCard from "../components/PopupProjectCard.js";
         <h2>Berkenbrock & Carvalho - Contract Law</h2>
         <p>
           A Laravel-based legal platform for contract automation.
-          Integrates <strong>pagar.me</strong> for payments and <strong>Clicksign</strong> for digital signatures,
-          optimizing document formalization.
+          Integrates <strong>pagar.me</strong> for payments and <strong>Clicksign</strong> for digital signatures.
         </p>
         <strong>Link:</strong><br/>
         <a className="popup-link" href="https://sistemamutuo.com.br/sign-in" target="_blank">Visit Website</a>
       </PopupProjectCard>
 
       <PopupProjectCard
-        title="Amazonas Cap"
+        title="Amazonas Cap - Website"
         bg="linear-gradient(to right, rgb(213, 133, 255) 0%, rgb(0, 255, 238) 100%)"
         skills={["Scss", "WordPress", "PHP", "HTML", "JavaScript"]}
       >
@@ -155,7 +133,6 @@ import PopupProjectCard from "../components/PopupProjectCard.js";
         <strong>Link:</strong><br/>
         <a className="popup-link" href="https://amazonascap.com.br/" target="_blank">Visit Website</a>
       </PopupProjectCard>
-      </div>
     </>
   }
 />
